@@ -18,7 +18,7 @@ class Message(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
-    phone = db.Column(db.String(40), unique=True)  # Papildome duomenų bazės modelį nauju stulpeliu.
+    phone = db.Column(db.String(40), unique=True, nullable=False)  # Papildome duomenų bazės modelį nauju stulpeliu.
     message = db.Column(db.Text, nullable=False)
     
 # prie konstruktoriaus irgi nepamirštame pridėti:
