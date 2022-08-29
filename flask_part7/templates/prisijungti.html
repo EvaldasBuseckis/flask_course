@@ -38,12 +38,15 @@
             </fieldset>
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
+                <small class="text-muted ml-2">
+                    <a href="{{ url_for('reset_request') }}">Pamiršote slaptažodį?</a>
+                </small>
             </div>
         </form>
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-           Do not have an account? <a class="ml-2" href="{{ url_for('registruotis') }}">Register</a>
+<!--            Already Have An Account? <a class="ml-2" href="{{ url_for('index') }}">Sign In</a>-->
         </small>
     </div>
 {% endblock content %}
